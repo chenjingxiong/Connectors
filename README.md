@@ -1,8 +1,427 @@
+# Connector 汇总表
+
+> 本表基于各子项目 README 自动提取，按目录名排序。主要字段说明：
+- **类型**：交易所 / 交易商券商 / 市场数据 / 链上DeFi / 数据服务
+- **品种**：Tick成交、订单流、订单簿/深度、Level1、Level2、K线/蜡烛、分钟线、日线、小时线、周线、月线、新闻公告等
+- **接入**：WebSocket、REST、轮询/快照等
+- **认证**：免认证/仅公开 表示公开行情通常无需 API Key，但仍可能需要 User-Agent 或账户
+
+| 连接器 | 类型 | 品种 | 接入 | 支持交易 | 认证 | 免费 | 备注 |
+|---|---|---|---|---|---|---|---|
+| ActivFinancial | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Aerodrome | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Aevo | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| AlgoSeek | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| AliceBlue | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Alor | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| AlorHistory | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Alpaca | 交易商/券商 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| AlphaVantage | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| AltCoinTrader | 交易所 | 订单簿/深度、Level2、Level1 | WebSocket、REST、轮询/快照 | 是 | 免认证/仅公开 | 公开数据免费 | 公开数据可用 |
+| Amberdata | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Anchorage | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| AngelOne | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ApexOmni | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| AscendEx | 交易所 | 订单簿/深度、Level2、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Aster | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Avantis | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| B3Up2Data | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BTCMarkets | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BTSE | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BYDFi | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Backpack | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Balancer | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BarChart | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bavest | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bcs | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Benzinga | 交易商/券商 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bibox | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BigOne | 交易所 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bigul | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Binance | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BinanceHistory | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BingX | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Birdeye | 交易所 | 订单簿/深度、Level1、分钟线 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bit2Me | 交易所 | 订单簿/深度、Level2、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BitFlyer | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BitGo | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BitStamp | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitalong | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitbank | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitexbook | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitfinex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitget | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bithumb | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitkub | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitmart | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitmex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BitoPro | 交易所 | Tick成交、订单簿/深度、Level2、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BitpandaFusion | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitrue | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitso | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bittrex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitunix | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bitvavo | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BloFin | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bloomberg | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bluefin | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bmll | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Breeze | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| BtcTurk | 交易所 | 订单簿/深度、Level2、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Btce | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Buda | 交易所 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Bullish | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ByBit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ByBitHistory | 数据服务 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CQG | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CSV | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CTP | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CapitalCom | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CapitalFutures | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CboeDataShop | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Cetus | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Cex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Chainflip | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ChainlinkDataStreams | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ChoiceFinX | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinApi | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinCap | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinCatch | 交易商/券商 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinDCX | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinEx | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinGecko | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinGlass | 交易商/券商 | 订单簿/深度、Level1 | 轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinJar | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinMarketCap | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinMetrics | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinPaprika | 交易所 | 订单簿/深度、Level1、小时线 | REST、轮询/快照 | 是 | 需API Key | 含免费/试用 | 需API Key/登录 |
+| CoinSpot | 交易所 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinSwitch | 交易商/券商 | 订单簿/深度、Level1 | WebSocket | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinTR | 交易所 | 订单簿/深度、Level2、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinW | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Coinalyze | 交易商/券商 | 订单簿/深度、Level1 | REST | 是 | 需API Key | 否 | 需API Key/登录 |
+| Coinbase | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Coincall | 交易商/券商 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Coincheck | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Coinhako | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Coinigy | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Coinmetro | 交易所 | 订单簿/深度、Level1、分钟线、小时线、日线 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Coinone | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CoinsPh | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Coinstore | 交易所 | 订单簿/深度、Level2、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Comdirect | 数据服务 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Copper | 数据服务 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CowProtocol | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CryptoCom | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| CryptoQuant | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Curve | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| DXtrade | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Daishin | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Databento | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| DeepBook | 交易商/券商 | 订单簿/深度、Level1、分钟线 | 轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Deepcoin | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Definedge | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| DeltaExchangeIndia | 交易商/券商 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Deribit | 交易所 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Deriv | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| DexScreener | 交易所 | 订单簿/深度、Level1、小时线 | REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Dexalot | 链上/DeFi | 订单簿/深度、Level1、分钟线、小时线 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Dhan | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Digifinex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Directa | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Dnse | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| DowJones | 数据服务 | 订单簿/深度、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Drift | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| DukasCopyJForex | 交易商/券商 | 订单簿/深度、Level1、K线/蜡烛 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| DxFeed | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| DydxChain | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ETrade | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Edinet | 交易商/券商 | 订单簿/深度、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| EodHistoricalData | 交易商/券商 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| EsmaFirds | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Etoro | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| EuronextWebServices | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Exante | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Exegy | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Exmo | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Extended | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| FTX | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| FXOpen | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| FactSet | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| FalconX | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Finage | 数据服务 | 订单簿/深度、Level1、分钟线、小时线 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| FinamTrade | 交易商/券商 | Tick成交、订单簿/深度、Level1、K线/蜡烛 | WebSocket、REST | 是 | 需API Key | 否 | 需API Key/登录 |
+| FinancialDatasets | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| FinancialModelingPrep | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Finnhub | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Finra | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Fireblocks | 数据服务 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Firstock | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| FivePaisa | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Fix | 交易所 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Flattrade | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| FluidDex | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Foxbit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| FubonNeo | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Fugle | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Fxcm | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Fyers | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| GMTrade | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| GainsNetwork | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| GateIO | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| GateIOHistory | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Gemini | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Glassnode | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Gleif | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| GmoCoin | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Gmx | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Gopax | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Groww | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Grvt | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| GuruFocus | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| HashKey | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| HdfcSecurities | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| HitBtc | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Huobi | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Hyperliquid | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| IG | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| IIFL | 交易商/券商 | 订单簿/深度、Level1、分钟线、小时线 | REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| IQFeed | 交易商/券商 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| IndependentReserve | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Indodax | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Injective | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| InteractiveBrokers | 交易商/券商 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Intrinio | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| InvertirOnline | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| JQuants | 交易商/券商 | 订单簿/深度、Level1、分钟线、小时线、日线 | REST | 是 | 需API Key | 否 | 需API Key/登录 |
+| Jainam | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| JpmDataQuery | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| JpxTdnet | 交易商/券商 | 订单簿/深度、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Jupiter | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| KabuStation | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Kaiko | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Kalshi | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Kiwoom | 数据服务 | 订单簿/深度、Level1 | REST | 是 | 需API Key | 否 | 需API Key/登录 |
+| Korbit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| KoreaInvestment | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| KoreanFsc | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| KotakNeo | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Kraken | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| KrxOpenApi | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Kucoin | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| KucoinHistory | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| KyberSwap | 链上/DeFi | 订单簿/深度、Level1 | REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| LBank | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| LCX | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| LMAX | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Latoken | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| LemonMarkets | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Lfj | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Ligther | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Lime | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Longbridge | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| LsSecurities | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| LsegRealTime | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Luno | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MStock | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ManifestTrade | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MarketDataApp | 市场数据 | 订单簿/深度、Level1 | 轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Marketaux | 数据服务 | 订单簿/深度、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Marketstack | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Marquee | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MasterLink | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Mastertrust | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MatchTrader | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MaxExchange | 交易所 | 订单簿/深度、Level2、Level1 | WebSocket、REST、轮询/快照 | 是 | 免认证/仅公开 | 公开数据免费 | 公开数据可用 |
+| MercadoBitcoin | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MetaApi | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Meteora | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Mexc | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MiraeSharekhan | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MoexISS | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MoexLchi | 交易所 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Moomoo | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Morningstar | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MotilalOswal | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| MtNewswires | 数据服务 | 订单簿/深度、新闻公告 | WebSocket | 是 | 需API Key | 否 | 需API Key/登录 |
+| NDAX | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Nado | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| NasdaqCloudDataService | 市场数据 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| NasdaqDataLink | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| NinjaTrader | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Noren | 交易商/券商 | 未明确 | WebSocket、REST | 是 | 需API Key | 否 | 需API Key/登录 |
+| NovaDax | 交易所 | 订单簿/深度、Level2、Level1 | REST、轮询/快照 | 是 | 免认证/仅公开 | 公开数据免费 | 公开数据可用 |
+| Nubra | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Nuvama | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| OSL | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Oanda | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Okex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| OkexHistory | 数据服务 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| OneInch | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| OpenDart | 交易商/券商 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| OpenFigi | 交易商/券商 | 未明确 | REST | 是 | 需API Key | 否 | 需API Key/登录 |
+| OpenMarkets | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| OptionMetrics | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Orats | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Orca | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| OrderlyNetwork | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Osmosis | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Ostium | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Ourbit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Pacifica | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| PancakeSwap | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Paradex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Paxos | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| PaytmMoney | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Pendle | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Phemex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| PhillipPoems | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| PintuPro | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Pionex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Poloniex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| PolygonIO | 交易商/券商 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Polymarket | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Ppi | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Primary | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| PrizmBit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ProBit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Public | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| PumpSwap | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Pyth | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| QFEX | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Qmt | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| QuantFeed | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Questrade | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| QuickSwap | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Quidax | 交易所 | 订单簿/深度、Level2、Level1 | REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| QuiverQuant | 数据服务 | 订单簿/深度、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Quodd | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Rain | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| RakutenRss | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| RavenPack | 数据服务 | 订单簿/深度、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Raydium | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Reya | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Rithmic | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Robinhood | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Rss | 数据服务 | 订单簿/深度、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Rupeezy | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| SSI | 交易商/券商 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Samco | 交易商/券商 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Saxo | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Schwab | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| SecApi | 交易商/券商 | 订单簿/深度、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| SecEdgar | 交易商/券商 | 订单簿/深度、新闻公告 | REST | 是 | 需API Key | 否 | 需API Key/登录 |
+| SetMarketData | 市场数据 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Settrade | 交易商/券商 | 订单簿/深度、Level1 | REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Shioaji | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Shoonya | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| SierraChartDtc | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| SimFin | 交易商/券商 | 订单簿/深度、Level1、日线、新闻公告 | REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| SnapTrade | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| SpGlobal | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| StandX | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| StockDataOrg | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| StocksTrader | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| StonFi | 链上/DeFi | 订单簿/深度、Level1 | REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| SunIo | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Swissquote | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| SynFutures | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Synthetix | 链上/DeFi | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| THORChain | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Talos | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tapbit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tardis | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TaseDataHub | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TastyTrade | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ThetaData | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TigerBrokers | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tiingo | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tinkoff | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tokocrypto | 交易所 | 订单簿/深度、Level2、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Toobit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TossSecurities | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tpex | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TradeLocker | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TradeOgre | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TradeStation | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TradeZero | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tradejini | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TraderMade | 交易所 | 订单簿/深度、Level1 | WebSocket、REST | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tradernet | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tradier | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Trading212 | 交易商/券商 | 订单簿/深度 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TradingEconomics | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TradingTechnologies | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Tradovate | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Transaq | 交易商/券商 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| TwelveData | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Twse | 数据服务 | 订单簿/深度、Level1 | WebSocket | 是 | 需API Key | 否 | 需API Key/登录 |
+| Uniswap | 链上/DeFi | Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| UnusualWhales | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Upbit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Upstox | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Usmart | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| VALR | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| VariationalOmni | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| VeloData | 数据服务 | 订单簿/深度、Level1、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Velodrome | 链上/DeFi | 订单簿/深度、Level1 | WebSocket、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Velora | 链上/DeFi | 订单簿/深度、Level1 | 轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Ventura | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| WazirX | 交易所 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Webull | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Weex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| WhiteBit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| WisdomCapital | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| WooX | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| XOpenHub | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| XbrlFilings | 交易商/券商 | 订单簿/深度、新闻公告 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Xrpl | 交易所 | 订单簿/深度、Level1 | WebSocket、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Xt | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Xtp | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Yobit | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Yuanta | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ZB | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Zaif | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Zebu | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ZeroHash | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ZeroX | 链上/DeFi | 订单簿/深度、Level1 | 轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Zerodha | 交易商/券商 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| ZondaCrypto | 交易所 | 订单簿/深度、Level1 | WebSocket、REST、轮询/快照 | 是 | 需API Key | 否 | 需API Key/登录 |
+| Zoomex | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| cTrader | 数据服务 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+| edgeX | 交易所 | 订单簿/深度、Level1 | 未明确 | 是 | 需API Key | 否 | 需API Key/登录 |
+
 ﻿# StockSharp Connectors
 
 本仓库包含 StockSharp (S#) 的所有开放连接器。
 
 它们开放修改并欢迎新增 — 请随意更改现有连接器或贡献您自己的连接器。
+
+根据各 Connector 的 README，不需要密码/凭证的情况如下（多数仅为公开行情/只读，交易或私有操作仍可能需要 API Key 或钱包私钥）：
+
+**完全无需凭证（只读/公开数据）**
+
+* **DexScreener** ：多链 DEX 行情分析，只读，无需 API 凭据。
+* **SEC EDGAR** ：SEC 财报数据，不需要 API Key（只需 User-Agent）。
+
+**公开市场数据免费，交易需 API Key**
+
+* AltCoinTrader、AscendEx、BigOne、Bit2Me、BitoPro、BtcTurk、Buda
+* CoinSpot、Coinstore、CoinTR、MaxExchange、NovaDax、Quidax、Tokocrypto、WazirX、ZondaCrypto
+* **Coincall** ：REST 品种发现/快照无需凭证，WebSocket 和私有操作需要 API Key。
+
+**历史公开数据导入（无交易密码）**
+
+* BinanceHistory、ByBitHistory、GateIOHistory、KucoinHistory
+
+**公链/DeFi（公开数据无需密钥，交易需钱包私钥/助记词）**
+
+* Chainflip、DeepBook、KyberSwap、XRP（Xrpl）
+
+**不需要但容易误解的**
+
+* **CoinCatch** 、 **SimFin** ：公开/只读功能仍需 API Key 或订阅。
+
 
 > **注意：** Common 目录不计入子项目（无 .csproj）。
 
